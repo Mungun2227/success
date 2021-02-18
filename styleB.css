@@ -1,0 +1,59 @@
+*{
+    height: 100%;
+}
+.flexbox{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    }
+    .flexbox div{
+        width: 100px;
+        border-left: 10px dotted #D0D0FF;
+        height: 150px;
+        margin: 10px;
+        
+    }
+    .flexbox .box-6{
+        align-self:  flex-end;
+    }
+    .flexbox div:hover{
+        background-color: yellow;
+        color: goldenrod;
+        cursor: pointer;
+    }
+    .box-1{
+        font-family: Tahoma;
+        font-size: 40px;
+        background-color: #eeeff2;
+    }
+    p{
+        margin-top: 10px;
+    }
+    .box-2{
+        font-family: Tahoma;
+        background-color: #eeeff2;
+        font-size: 40px;
+    }
+    .box-3{
+        font-family: Tahoma;
+        background-color: #eeeff2;
+        font-size: 40px;
+        
+    }
+    .box-4{
+        font-family: Tahoma;
+        background-color: #eeeff2;
+        font-size: 40px;
+    }
+    .box-5{
+        font-family: Tahoma;
+        background-color: #eeeff2;
+        font-size: 40px;
+    }
+    .box-6{
+        background-color: #eeeff2;
+        font-family: Tahoma;
+        font-size: 40px;
+        align-self: flex-end;
+    }
+    

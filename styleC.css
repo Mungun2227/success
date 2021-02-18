@@ -1,0 +1,108 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+.flexbox{
+    display: flex;
+    
+    }
+    .flexbox div{
+        width: 100px;
+        border-left: 10px dotted #D0D0FF;
+        height: 150px;
+        margin: 10px;
+    }
+    .flexbox .box-1:hover{
+        color: pink;
+        background-image: linear-gradient(to bottom right, white, pink);
+        
+        transform: skew(15deg, 30deg);
+        cursor: pointer;
+        box-shadow: 5px 5px pink;
+        
+    }
+    .flexbox .box-2:hover{
+        color: green;
+        cursor: pointer;
+        background-image: linear-gradient(to bottom right, yellow, green);
+        box-shadow: 5px 5px green;
+        transform: matrix(1,2,-1,1,80,80);
+        
+    }
+    .flexbox .box-3:hover{
+        color: grey;
+        background-image: linear-gradient(to bottom right, white, grey);
+        cursor: pointer;
+        transform: rotate(45deg);
+        box-shadow: 5px 5px grey;
+    }
+    .flexbox .box-4:hover{
+        color: fuchsia;
+        background-image: linear-gradient(to bottom right,pink, rebeccapurple);
+        cursor: pointer;
+        width: 200px;
+        height: 200px;
+        transition: width 2s, height 4s;
+        box-shadow: 5px 5px rebeccapurple;
+    }
+    .flexbox .box-5:hover{
+        color: aqua;
+        background-image: linear-gradient(to bottom right, teal, aqua);
+        cursor: pointer;
+        transform: inherit;
+        box-shadow: 5px 5px teal;
+    }
+    .flexbox .box-6:hover{
+        color: goldenrod;
+        background-image: linear-gradient(to bottom right, white, chocolate);
+        cursor: pointer;
+        box-shadow: 5px 5px chocolate;
+        transform:rotateY(50deg);
+    }
+    .box-1{
+        font-family: Tahoma;
+        font-size: 40px;
+        background-color: #eeeff2;
+        animation-name: mngn;
+        animation-duration: 2s;
+        @keyframes mngn {
+            from{background-color: pink;}
+            to {background-color: red;}
+        }
+        
+    }
+    p{
+        margin-top: 10px;
+    }
+    .box-2{
+        transition-duration: 1000ms;
+        background-color: #eeeff2;
+        font-size: 40px;
+    }
+    .box-3{
+        
+        background-color: #eeeff2;
+        font-size: 40px;
+        transition-duration: 1000ms;
+        
+    }
+    .box-4{
+        
+        background-color: #eeeff2;
+        font-size: 40px;
+        transition-duration: 1000ms;
+    }
+    .box-5{
+        
+        background-color: #eeeff2;
+        font-size: 40px;
+        transition-duration: 1000ms;
+    }
+    .box-6{
+        display: flex;
+        background-color: #eeeff2;
+        transition-duration: 1000ms;
+        font-size: 40px;
+        order: 1;
+        align-self: flex-end;
+
+    }
